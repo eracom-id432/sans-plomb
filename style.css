@@ -1,0 +1,264 @@
+body {
+    font-family: 'Special Elite', cursive;
+    background-color: #111;
+    color: #8b8b8b; 
+    margin: 0;
+    padding: 0;
+    line-height: 1.1;
+    font-size: 11px;
+    text-size-adjust: none; 
+    -webkit-text-size-adjust: none;
+}
+
+a {
+    text-decoration: none;
+    color: #8b8b8b; 
+}
+
+a:hover {
+    color: #4682b4;
+}
+
+a:focus, button:focus {
+    outline: none;
+}
+
+h1, h2, .title {
+    font-family: 'Freckle Face', monospace; 
+    font-size: 2em;
+}
+
+p {
+    text-align: justify; 
+    word-spacing: -1px; 
+}
+
+/* Limitation de la largeur maximale */
+.container {
+  max-width: 1200px; /* Largeur maximale de la page */
+  margin: 0 auto; /* Centre le contenu horizontalement */
+  padding: 0 20px; /* Ajoute un peu d'espace sur les côtés */
+}
+
+/* Header */
+.header {
+    background-color: #222;
+    padding: 20px;
+    text-align: center;
+}
+
+.logo {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.nav {
+    text-align: center;
+    padding: 10px;
+    background-color: #222;
+}
+
+.nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav li {
+    position: relative;
+}
+
+.nav a {
+    font-weight: bold;
+    padding: 2px 4px; /* Cible de clic trop petite */
+}
+
+.nav a:hover {
+    color: #fff;
+}
+
+.nav .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    padding: 10px;
+    list-style: none;
+    border-radius: 5px;
+}
+
+.nav li:hover .submenu {
+    display: block;
+}
+
+.submenu li {
+    margin: 0px 0;
+    padding: 5px 0;
+    text-align: left;
+    line-height: 1.2;
+}
+
+.submenu a {
+    color: #ccc;
+    font-size: 0.9em;
+    padding: 10px 0;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background-image: url(images/panagiotis-falcos-akguWjJ1oR8-unsplash.png);
+    background-size: cover;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.hero-buttons button {
+    background-color: #000;
+    color: #8b8b8b;
+    border: none;
+    padding: 2px 4px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 10px;
+}
+
+.hero-buttons button:hover {
+    background-color: #4682b4;
+}
+
+/* Level Bar */
+.level-bar {
+    width: 80%;
+    height: 10px;
+    background-color: #333;
+    margin: 20px auto;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.level {
+    width: 50%;
+    height: 100%;
+    background-color: #1e90ff;
+}
+
+/* Program Section */
+.program {
+    padding: 40px 20px;
+    background-color: #222;
+}
+
+.program h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.program ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.program li {
+    display: flex; /* Utilise Flexbox pour aligner les éléments */
+    align-items: flex-start; /* Aligne les éléments en haut */
+    gap: 15px; /* Ajoute un espacement entre l'image et le texte */
+    margin-bottom: 20px; /* Espacement entre les items */
+}
+
+.program li img {
+    width: 300px; /* Taille fixe pour les images */
+    height: auto; /* Conserve les proportions */
+    flex-shrink: 0; /* Empêche l'image de se redimensionner */
+}
+
+.program li div {
+    flex: 1; /* Permet au texte de prendre tout l'espace restant */
+}
+
+.program li p {
+    margin: 10px 0;
+}
+
+.program button {
+    background-color: #000;
+    color: #8b8b8b;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.program button:hover {
+    background-color: #4682b4;
+}
+
+/* Gallery Section */
+.gallery {
+    padding: 40px 20px;
+    background-color: #111;
+    text-align: center;
+}
+
+.gallery h2 {
+    margin-bottom: 20px;
+}
+
+.photos {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.photos .photo img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.photos .photo img:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+.footer {
+    background-color: #222;
+    color: #ccc;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer p {
+    margin: 5px 0;
+}
+
+.footer .nav a {
+    color: #ccc;
+    margin: 0 10px;
+}
+
+.footer .nav a:hover {
+    color: #fff;
+}
+
+p {
+    line-height: 1.1; /* Interlignage trop serré */
+}
+
