@@ -1,12 +1,13 @@
 body {
-    font-family: 'Special Elite', cursive;
+    font-family: 'helvetica', cursive;
     background-color: #111;
-    color: #8b8b8b; 
+    color: #ffffff; 
     margin: 0;
     padding: 0;
     line-height: 1.1;
-    font-size: 11px;
+    font-size: 18px;
     text-size-adjust: none; 
+    text-justify: auto;
     -webkit-text-size-adjust: none;
 }
 
@@ -20,11 +21,11 @@ a:hover {
 }
 
 a:focus, button:focus {
-    outline: none;
+    margin: 10rem;
 }
 
 h1, h2, .title {
-    font-family: 'Freckle Face', monospace; 
+    font-family: 'helvetica', monospace; 
     font-size: 2em;
 }
 
@@ -56,6 +57,7 @@ p {
     text-align: center;
     padding: 10px;
     background-color: #222;
+    
 }
 
 .nav ul {
