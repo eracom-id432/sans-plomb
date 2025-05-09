@@ -1,7 +1,8 @@
 body {
     font-family: 'Special Elite', cursive;
     background-color: #111;
-    color: #8b8b8b; 
+    color: white;
+    text-shadow: black 1px 1px 3px;
     margin: 0;
     padding: 0;
     line-height: 1.1;
