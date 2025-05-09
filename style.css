@@ -24,11 +24,15 @@ a:focus, button:focus {
 }
 
 h1, h2, .title {
-    font-family: 'Freckle Face', monospace; 
-    font-size: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3em;
+    color: #fff;
 }
 
 p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #fff;
     text-align: justify; 
     word-spacing: -1px; 
 }
@@ -117,7 +121,7 @@ p {
 }
 
 .hero h1 {
-    font-size: 2.5em;
+    font-size: 18px;
     margin-bottom: 20px;
 }
 
@@ -128,13 +132,12 @@ p {
 
 .hero-buttons button {
     background-color: #000;
-    color: #8b8b8b;
+    color: white;
     border: none;
-    padding: 2px 4px;
-    margin: 5px;
+    padding: 20px 20px;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 10px;
+    font-size: 16px;
 }
 
 .hero-buttons button:hover {
