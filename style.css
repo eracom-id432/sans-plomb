@@ -1,7 +1,9 @@
+*
+
 body {
-    font-family: 'Special Elite', cursive;
+    font-family: 'Karla', sans-serif;
     background-color: #111;
-    color: #8b8b8b; 
+    color: #cacaca; 
     margin: 0;
     padding: 0;
     line-height: 1.1;
@@ -16,7 +18,8 @@ a {
 }
 
 a:hover {
-    color: #4682b4;
+    color: #47acff;
+    
 }
 
 a:focus, button:focus {
@@ -24,13 +27,15 @@ a:focus, button:focus {
 }
 
 h1, h2, .title {
-    font-family: 'Freckle Face', monospace; 
+    font-family: 'Concert One';
     font-size: 2em;
 }
 
 p {
     text-align: justify; 
-    word-spacing: -1px; 
+    word-spacing: 0.3em; 
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
 }
 
 /* Limitation de la largeur maximale */
@@ -48,14 +53,18 @@ p {
 }
 
 .logo {
-    font-size: 1.5em;
+    font-size: 2.5em;
     margin-bottom: 10px;
+    font-family: 'Concert One';
 }
 
 .nav {
     text-align: center;
     padding: 10px;
     background-color: #222;
+    position: relative;
+    z-index: 10;
+
 }
 
 .nav ul {
@@ -73,11 +82,12 @@ p {
 
 .nav a {
     font-weight: bold;
+    font-size: 16px;
     padding: 2px 4px; /* Cible de clic trop petite */
 }
 
 .nav a:hover {
-    color: #fff;
+    color: #47acff;
 }
 
 .nav .submenu {
@@ -89,6 +99,7 @@ p {
     padding: 10px;
     list-style: none;
     border-radius: 5px;
+    font-size: 16px;
 }
 
 .nav li:hover .submenu {
@@ -103,42 +114,62 @@ p {
 }
 
 .submenu a {
-    color: #ccc;
+    color: #ffffff;
     font-size: 0.9em;
-    padding: 10px 0;
+    padding: 20px 0;
 }
 
 /* Hero Section */
 .hero {
+    position: relative;
+
     text-align: center;
     padding: 50px 20px;
-    background-image: url(images/panagiotis-falcos-akguWjJ1oR8-unsplash.png);
-    background-size: cover;
+    overflow: hidden;
+    z-index: 0;
+    
+
 }
 
+.hero::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: -2;
+    background-image: url(images/Compressed/panagiotis-falcos-akguWjJ1oR8-unsplash.webp);
+    background-size: cover;
+    filter: blur(0.3em);
+}
 .hero h1 {
+
     font-size: 2.5em;
     margin-bottom: 20px;
 }
 
 .hero p {
-    font-size: 1.2em;
+
+    font-size: 16px;
     margin-bottom: 30px;
+    color: #ffffff;
 }
 
 .hero-buttons button {
-    background-color: #000;
-    color: #8b8b8b;
+    background-color: #ffffff;
+    color: #000000;
     border: none;
-    padding: 2px 4px;
-    margin: 5px;
-    border-radius: 5px;
+    padding: 10px 10px;
+    margin: 10px;
+    border-radius: 10px;
     cursor: pointer;
-    font-size: 10px;
+    font-size: 16px;
+    
 }
 
 .hero-buttons button:hover {
-    background-color: #4682b4;
+    background-color: #3ca7ff;
 }
 
 /* Level Bar */
