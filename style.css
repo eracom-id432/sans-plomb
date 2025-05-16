@@ -5,7 +5,7 @@ body {
     text-shadow: black 1px 1px 4px;
     margin: 0;
     padding: 0;
-    line-height: 2.4em;
+    line-height: 2;
     font-size: 16px;
     text-size-adjust: none; 
     -webkit-text-size-adjust: none;
@@ -27,12 +27,17 @@ a:focus, button:focus {
 
 h1, h2, .title {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
-    font-size: 2em;
+    font-size: 1.5em;
+}
+
+span {
+    line-height: 10px;
 }
 
 p {
     text-align: justify; 
     word-spacing: -1px; 
+    line-height: 1.4;
 }
 
 /* Limitation de la largeur maximale */
@@ -129,13 +134,13 @@ p {
 
 .hero-buttons button {
     background-color: #000;
-    color: #8b8b8b;
+    color: #ccc;
     border: none;
-    padding: 2px 4px;
+    padding: 10px 16px;
     margin: 5px;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 10px;
+    font-size: 16px;
 }
 
 .hero-buttons button:hover {
@@ -257,9 +262,5 @@ p {
 
 .footer .nav a:hover {
     color: #fff;
-}
-
-p {
-    line-height: 1.1; /* Interlignage trop serré */
 }
 
