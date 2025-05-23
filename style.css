@@ -134,7 +134,7 @@ p {
 
 .hero-buttons button {
     background-color: #000;
-    color: #ccc;
+    color: white;
     border: none;
     padding: 10px 16px;
     margin: 5px;
@@ -203,7 +203,8 @@ p {
 
 .program button {
     background-color: #000;
-    color: #8b8b8b;
+    font-size: 16px;
+    color: white;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
